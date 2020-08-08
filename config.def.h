@@ -123,7 +123,7 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#282a36",
 	"#f8f8f2",
-	"#282a36",
+	"#20212b",
 };
 
 
@@ -133,7 +133,7 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
+static unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -205,6 +205,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ TERMMOD,              XK_K,           kscrollup,      {.i = -1} },
 	{ TERMMOD,              XK_J,           kscrolldown,    {.i = -1} },
+        { TERMMOD,            Button4,        kscrollup,      {.i =  1} },
+	{ TERMMOD,            Button5,        kscrolldown,    {.i =  1} },
 };
 
 /*
